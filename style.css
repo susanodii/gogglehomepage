@@ -1,17 +1,29 @@
-body,p{
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
-nav{
+
+/* body,p{
+    margin: 0;
+    padding: 0;
+} */
+
+ nav{
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     width:15%;
     margin: auto;
-    float: right;
-    padding: 1em;
+      float: right;  
+     padding: 2em 4em;
     
-}
+} 
+
 nav a{ 
+
     text-decoration: none;
     color: blue;
 
@@ -19,7 +31,9 @@ nav a{
 
 
 nav img{
-    height: 20px;
+   height: 20px;
+   width: 20px;
+    /* height: 20px; */
 }
 main{
     width: 50%;
@@ -68,3 +82,121 @@ input{
     .left a{
         margin-right: 1em;
     }
+    @media  screen and (max-width:479px){
+
+nav{
+/* border: 5px solid red; */
+    font-size: large;
+    gap: 20px;
+    width: 30vw;
+    float: right;
+    justify-content: space-around;
+}
+.nav-link{
+    font-size: large;
+    font-weight: 700;
+}
+
+.google-img{
+    width: 100%;
+    height: 100%;
+}
+input {
+/*    
+    border: 5px solid red;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; */
+
+display: flex;
+justify-content: center;
+
+    } 
+
+.button_container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_bottom{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+footer{
+    background-color: white; 
+    
+width: 100vw;
+    
+}
+ }
+
+ @media screen and (min-width:768px) and (max-width:1023px){
+
+    nav{
+         
+        /* border: 5px solid red;  */
+            
+            gap: 20px;
+            width: 30vw;
+            float: right;
+            font-size: 30px;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            font-size: 50px;
+            padding-bottom: 15px;
+        }
+
+        nav img{
+            height: 20px;
+            width: 20px;
+             /* height: 20px; */
+         }
+
+
+        .nav-link{
+            font-size: large;
+            font-weight: 700;
+        }
+        
+        
+        .google-img{
+            background-color: brown;
+        }
+        input {
+
+        
+        display: flex;
+        justify-content: center;
+        
+            } 
+        
+        .button_container button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .footer_bottom{
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        } */
+        
+        /* .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        } */
+        
+         /* } */
+        
+
+ }
